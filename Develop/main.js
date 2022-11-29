@@ -23,4 +23,11 @@ $(document).ready(function () {
         $(`#${thisTime} .blockTextArea`).val(loadedData[thisTime]);
     });
 
+    $(".blockSaveButton").on("click", function () {
+        let enteredText = $(this).siblings(".blockTextArea").val();
+        let thisTime = $(this).parent().attr("id");
+        loadedData[thisTime] = enteredText;
+        window.localStorage.setItem("textDataWDS", JSON.stringify(loadedData));
+    })
+
 });
