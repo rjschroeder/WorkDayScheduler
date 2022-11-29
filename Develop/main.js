@@ -30,4 +30,27 @@ $(document).ready(function () {
         window.localStorage.setItem("textDataWDS", JSON.stringify(loadedData));
     })
 
+    let interval = setInterval(() => {
+        let currentHour = moment().hours();
+        $(".timeBlock").each(function () {
+            let thisTime = $(this).attr("id");
+            if(thisTime.length === 3) {
+                thisTime = parseInt(thisTime[0]);
+            } else if(thisTime.length === 4) {
+                thisTime = parseInt(thisTime[0] + thisTime[1]);
+            }
+            console.log("moment hour: "+ currentHour + "  this hour: " + thisTime);
+            if(thisTime < currentHour){
+                $(this).addClass("past");
+            } else if (thisTime === currentHour) {
+                $(this).removeClass("past");
+                $(this).addClass("present");
+            } else if (this.time > currentHour) {
+                $(this).removeClass("past");
+                $(this).removeClass("present")
+                $(this).addClass("future");
+            }
+        })
+    }, 1000)
+
 });
