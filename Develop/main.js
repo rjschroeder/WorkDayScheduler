@@ -47,7 +47,7 @@ $(document).ready(function () {
             } else if (thisTime === currentHour) {
                 $(this).removeClass("past");
                 $(this).addClass("present");
-            } else if (this.time > currentHour) {
+            } else if (thisTime > currentHour) {
                 $(this).removeClass("past");
                 $(this).removeClass("present")
                 $(this).addClass("future");
