@@ -28,6 +28,7 @@ textarea{
 }
 
 .timeBlock{
+  height: 100px;
   display: flex;
   text-align: center;
   border-radius: 15px;
@@ -42,6 +43,7 @@ textarea{
 
 .timeLabel {
   width: 140px;
+  height: 100px;
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
@@ -69,6 +71,7 @@ textarea{
   background-color: #06AED5;
   color: white;
   font-size: 20px;
+  width: 10%;
 }
 
 .blockSaveButton i:hover {
