@@ -34,10 +34,12 @@ $(document).ready(function () {
         let currentHour = moment().hours();
         $(".timeBlock").each(function () {
             let thisTime = $(this).attr("id");
-            if(thisTime.length === 3) {
+            if(thisTime.length === 3 && thisTime[1] === "a") {
                 thisTime = parseInt(thisTime[0]);
             } else if(thisTime.length === 4) {
                 thisTime = parseInt(thisTime[0] + thisTime[1]);
+            } else if (thisTime.length === 3 && thisTime[1] === "p") {
+                thisTime = parseInt(thisTime[0]) + 12;
             }
             console.log("moment hour: "+ currentHour + "  this hour: " + thisTime);
             if(thisTime < currentHour){
