@@ -50,6 +50,7 @@ $(document).ready(function () {
         //gets current hour (0-23) from moment.js
         //this isnt good becuase the object reads in 12-hour time
         let currentHour = moment().hours();
+        currentHour -= 5;
         $(".timeBlock").each(function () {
             let thisTime = $(this).attr("id");
             //if the block we are checking is a 1 digit am

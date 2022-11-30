@@ -27,8 +27,8 @@ THEN the saved events persist
 
 ## Screenshot
 
-![Screenshot of Work Day Scheduler]()
+![Screenshot of Work Day Scheduler](/applicationScreenshot.PNG)
 
 ## Live Link
 
-[Deployed Application Here]()
+[Deployed Application Here](https://rjschroeder.github.io/WorkDayScheduler/Develop/)
