@@ -41,7 +41,6 @@ $(document).ready(function () {
             } else if (thisTime.length === 3 && thisTime[1] === "p") {
                 thisTime = parseInt(thisTime[0]) + 12;
             }
-            console.log("moment hour: "+ currentHour + "  this hour: " + thisTime);
             if(thisTime < currentHour){
                 $(this).addClass("past");
             } else if (thisTime === currentHour) {
