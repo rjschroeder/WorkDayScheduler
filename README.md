@@ -24,6 +24,7 @@ THEN the saved events persist
 
 ### Description
 
+The work day scheduler offers the user an interactive application where they can type multiple different tasks into each hour of the work day. The schedule is broken up into one hour blocks and each one can be edited and saved, with persistent storage. As the hours go by, the website updates each time block with a color coded representation of past, present, and future.
 
 ## Screenshot
 
